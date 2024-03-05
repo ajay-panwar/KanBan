@@ -1,0 +1,42 @@
+/*
+Approach - what is needed?
+
+HTML Elements - high level
+* top navbar 
+* color icon div 
+* add button
+* remove button
+* on click +, Prompt form/Modal to add the note
+* text area
+* color selection widget
+* task card
+* top strip of color
+* task description
+* lock icon
+* unlock icon
+* unique ID strip
+* remove button
+
+Functionality - JS
+* click event on add button
+* click event on color widget
+* key down event on enter button
+* click event on top strip of the task card
+* click event on lock/unlock icon
+* click event on remove button
+* click event on task card to remove
+* click event on top color icons in nav
+* double click event on top color icons in nav
+* 
+
+Icons
+Font Awesome - Used to add icons to your code
+icons are lightweight and don't add load of downloading images. Saves load time. 
+Using icons in your code improves performance of your website
+add colors and size to icons using font property in CSS
+https://kit.fontawesome.com/589957875e.js 
+
+Yahoo article (good read) - https://developer.yahoo.com/performance/rules.html?guccounter=1
+*/
+
+
