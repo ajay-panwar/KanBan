@@ -31,6 +31,7 @@ removeBtn.addEventListener('click', function(){
     }else{
         // style - none
         removeBtn.style.color = 'white';
+        alert("Remove button is deactivated!");
     }
 });
 
@@ -74,13 +75,14 @@ function createTicket(ticketColor, ticketTask, ticketID){
     ticketCont.setAttribute('class', 'ticket-cont');
     ticketCont.innerHTML = `
         <div class="ticket-color ${ticketColor}"></div>
-        <div class="ticket-id">${id}</div>
+        <div class="ticket-id"> Token - ${id}</div>
         <div class="task-area">${ticketTask}</div>
         <div class="ticket-lock">
             <i class="fa-solid fa-lock"></i>
         </div>
     `   
         mainContainer.appendChild(ticketCont);
+        handleColor(ticketCont, id);
         handleLock(ticketCont, id);
         handleRemove(ticketCont, id);
         if(!ticketID){
@@ -143,6 +145,25 @@ function handleLock(ticket, id){
 }
 
 //handle color
+function handleColor(ticket, id){
+    let ticketColorEle = ticket.querySelector('.ticket-color');
+    ticketColorEle.addEventListener('click', function(){
+        let ticketIdx = getTicketIdx(id);
+        let ticketCol = ticketColorEle.classList[1];
+        ticketColorEle.classList.remove(ticketCol);
+        if(ticketCol === 'black'){
+            ticketColorEle.classList.add('lightpink');
+        } else if(ticketCol === 'lightpink'){
+            ticketColorEle.classList.add('lightgreen');
+        } else if(ticketCol === 'lightgreen'){
+            ticketColorEle.classList.add('lightblue');
+        } else{
+            ticketColorEle.classList.add('black');
+        }
+        ticketsArr[ticketIdx].ticketColor = ticketColorEle.classList[1];
+        localStorage.setItem('tickets', JSON.stringify(ticketsArr));
+    })
+}
 
 //click color to filter
 //single click filters same color tickets
