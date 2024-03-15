@@ -3,15 +3,19 @@
     padding: 0;
 }
 
-#title{
-    margin-left: 10px;
-    font-size: xxx-large;
-    font-family: fantasy;
-    position: absolute;
-    left: 0;
-    color: rgb(222, 220, 92);
+#box{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(227, 237, 245);
 }
-
+#title{
+    width: 60%;
+    padding-bottom: 0;
+    font-family:'Franklin Gothic Medium';
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(147, 139, 145);   
+}
 .background{
     height:100vh;
     width:100vw;
@@ -22,6 +26,7 @@
 .toolbox-cont{
     background-color: rgb(13, 75, 92);
     height: 100px;
+    width:100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +72,7 @@ background-color: black;
     height: 70px;
     display: flex;
     width: 100px;
-    margin-left: 30px;
+    margin-left: 10px;
     display: flex;
     gap:3px;
     border-radius: 10px;
@@ -90,7 +95,7 @@ background-color: black;
     justify-content: center;
     align-items: center;
     color:white;
-    font-size: 8vh;
+    font-size: 7.5vh;
     width:50%;
     border: 1px solid black;
     border-radius: 10px;
@@ -103,7 +108,7 @@ background-color: black;
     justify-content: center;
     align-items: center;
     color:white;
-    font-size: 8vh;
+    font-size: 7.5vh;
     width:50%;
     border: 1px solid black;
     border-radius: 10px;
