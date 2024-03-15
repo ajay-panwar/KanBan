@@ -48,7 +48,7 @@ background-color: black;
     display: flex;
     width: 100px;
     margin-left: 30px;
-
+    display: flex;
 }
 
 
@@ -66,7 +66,7 @@ background-color: black;
     justify-content: center;
     align-items: center;
     color:white;
-    font-size: 30px;
+    font-size: 8vh;
     width:50%;
     border: 1px solid black;
 }
@@ -76,7 +76,127 @@ background-color: black;
     justify-content: center;
     align-items: center;
     color:white;
-    font-size: 30px;
+    font-size: 8vh;
     width:50%;
     border: 1px solid black;
 }
+
+.active{
+    border: 5px solid rgb(248, 232, 6);
+}
+
+.priority-color{
+    
+    height :5vh;
+    width: 10vw;
+
+}
+
+.modal-cont{
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    z-index: 2;
+}
+
+.textarea-cont{
+    font-size: 32px;
+    width: 75%;
+    outline:none;
+    height: 100%;
+    background-color: rgb(176, 171, 179);
+    resize: none;
+    border:none;
+}
+
+.priority-colors-container{
+    background-color: rgb(47, 49, 48);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.main-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.ticket-cont{
+    height: 150px; 
+    width: 150px;
+    background-color: coral;
+    position: relative;
+}
+
+.ticket-id{
+    background-color: yellow;
+}
+
+.ticket-color{
+    height: 10%;
+}
+
+.ticket-lock{
+    position: absolute;
+    right:5%;
+    bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main-cont{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.ticket-cont{
+    height: 150px;
+    width: 200px;
+    background-color: coral;
+    position: relative;
+}
+
+.ticket-color{
+    height: 16px;
+}
+
+.ticket-id{
+    height: 32px;
+    background-color: yellow;
+}
+
+.ticket-lock{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+} */

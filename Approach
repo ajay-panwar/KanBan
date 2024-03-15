@@ -40,3 +40,15 @@ Yahoo article (good read) - https://developer.yahoo.com/performance/rules.html?g
 */
 
 
+####Local Storage
+1. Local storage is a storage specific to browser url that is hit by a domain. So every website has its own local storage. 
+2. Local storage is limited to 5MB (per domain). 
+3. Local storage is persistent, does not get deleted on refresh or closing of browser or any other actions
+4. Add, set, get, remove, clear - https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+5. Why would you use local storage?
+Persistent Data Storage, Client-Side Caching, Offline Support, Improved User Experience, Reduced Server Load, Cross-Browser Compatibility
+6. Local storage is browser specific.
+
+
+
+
